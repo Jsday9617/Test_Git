@@ -1,0 +1,105 @@
+#if statements
+cars = ["audi", "bmw", "subaru", "toyota"]
+for car in cars:
+    if car == "bmw":
+        print(car.upper())
+    else:
+        print(car.title())
+#The in this example first checks if the current value of car is "bmw". If it is the value is printed uppercase.
+#If the value of car is anything other than "bmw" is printed in title case.
+answer = 17 
+if answer != 42:
+    print("That is not the correct answer. Please try again")
+
+car = "subaru"
+print("Is car == 'subaru'? I predict True." )
+print(car == "subaru")
+
+print("\nIs car == 'audi'? I predict False")
+print(car == "audi")
+
+color = "purple"
+print("Is color == 'purple'? I predict True.")
+print(color == "purple")
+
+print("\nIs color == 'yellow'? I predict False")
+print(color == "yellow")
+#Practice this ! page (82 chapter 5)
+
+age = 17 
+if age >= 18:
+    print("You are old enough to vote!")
+    print("Have you reigestered to vote yet?")
+
+else:
+    print("Sorry, you are too young to vote.")
+    print("Please register to vote as soon as you turn 18!")
+
+#The if-elif-else Chain
+#Admission for anyone under age 4 is free.
+ #Admission for anyone between the ages of 4 and 18 is $5.
+ #Admission for anyone age 18 or older is $10.
+
+age = 12
+if age < 4:
+    print("Your admission cost is $0.")
+elif age < 18:
+    print("Your admission cost is $5.")
+else:
+    print("Your admission is $10.")
+
+age = 12
+if age < 4:
+    price = 0
+elif age < 18:
+    price = 5
+else:
+    price = 10
+
+print("Your admission cost is $" + str(price) + ".")
+# you can use as many elif blocks as you like 
+age = 12
+if age < 4:
+    price = 0
+elif age < 18:
+    price = 5
+elif age >= 65:
+    price = 5
+else:
+    price = 10
+print("Your admission cost is $" + str(price) + ".")
+#else block is a catch all statement. it matches any condition that wasnt matched by a specific if or elif test.
+
+#Testing multiple conditions
+requested_toppings = ["mushrooms","extra cheese"]
+if "mushrooms" in requested_toppings:
+    print("adding mushrooms.")
+if "pepperoni" in requested_toppings:
+    print("adding pepperoni")
+if "extra cheese" in requested_toppings:
+    print("adding extra cheese")
+
+print("\nFinished making your pizza!")
+
+alien_color = "green"
+if alien_color is "green.":
+    print("Player earned 5 Points!")
+if alien_color is "yellow.":
+    print("Player earned 10 Points!")
+if alien_color is "red":
+    print("Player earned 15 points!")
+
+
+requested_toppings = ["mushrooms", "green peppers", "extra cheese"]
+for requested_topping in requested_toppings:
+    print("adding " + requested_topping + ".")
+print("\nFinished making your pizza!")
+
+requested_toppings = ["mushrooms", "green peppers"]
+for requested_topping in requested_toppings:
+    if requested_topping == "green peppers":
+     print("Sorry, we are out of green peppers right now.")
+else:
+    print("adding " + requested_topping + ".")
+print("\nFinished making your pizza!")
+
